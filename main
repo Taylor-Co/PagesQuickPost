@@ -1,0 +1,13 @@
+version = 0
+sysroot = ""
+sysroots_dir = ""
+parts = []
+
+[Application]
+entry_point = ""
+is_console = false
+is_bundle = true
+name = "PortTest"
+qmake_configuration = ""
+script = "main.py"
+syspath = ""
