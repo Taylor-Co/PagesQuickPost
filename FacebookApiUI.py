@@ -152,8 +152,7 @@ class Ui_Form(object):
 
     def init(self):
         self.appID = 780131783148278
-        self.appSecret = "dd495f7b58f6a4581eaa74fabf30dade"
-        self.clientToken = "bea87ab616584d0a577adcba25ede947"
+        
         self.LCLink = "https://graph.facebook.com/v2.6/device/login?access_token=" + str(
             self.appID) + "|" + self.clientToken + "&scope=pages_show_list,pages_manage_posts,pages_read_engagement"
         self.code = ""

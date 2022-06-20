@@ -56,6 +56,7 @@ msg.setWindowTitle("Login Required")
 
 diagLayout = QVBoxLayout()
 q = QDialog()
+q.setWindowTitle("Login Required")
 diagLabel = QLabel(q)
 diagLabel.setOpenExternalLinks(True)
 diagLabel.setTextFormat(Qt.TextFormat.RichText)
@@ -95,8 +96,8 @@ if(ui.getVariables()):
     mainPageList.loadPageList(ui.getPageJSON())
 else:
     lc = ui.LCRetrieve()
-    msg.setText(msgTemplate + lc)
-    widget.setWindowOpacity(.75)
+    diagLabel.setText(msgTemplate + lc)
+    widget.setWindowOpacity(.9)
     q.show()
 
 
